@@ -11,7 +11,7 @@ cap = cv2.VideoCapture(0)
 success, img = cap.read()
 cap.release()
 cv2.destroyAllWindows() 
-imgMy = face_recognition.load_image_file('your_image.jpeg')
+imgMy = face_recognition.load_image_file('your_image.jpeg')#add your image file/path here
 imgMy = cv2.cvtColor(imgMy,cv2.COLOR_BGR2RGB)
 imgTest = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 faceLoc = face_recognition.face_locations(imgMy)[0]
